@@ -1,0 +1,87 @@
+body{
+background: linear-gradient(135deg,#74ebd5,#9face6);
+font-family: Arial;
+text-align: center;
+}
+
+.hobi{
+    color: darkgreen;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+}
+
+li{
+background: #6c8ea0;
+width: 200px;
+margin: 10px auto;
+padding: 10px;
+border-radius: 10px;
+transition: 0.3s;
+}
+
+li:hover{
+background: #3c6e7a;
+color: white;
+transform: scale(1.1);
+}
+
+.deskripsi{
+width: 50%;
+margin: 30px auto;
+font-family: 'Poppins', sans-serif;
+font-size: 20px;
+line-height: 1.9;
+text-align: justify;
+background: white;
+padding: 30px;
+border-radius: 15px;
+box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.profile-img{
+border-radius: 10%;
+border: 3px solid rgb(25, 201, 154);
+transition: transform 0.4s;
+}
+
+img:hover{
+transform: scale(1.1);
+}
+
+.container-hobi{
+display: flex;
+justify-content: center;
+align-items: flex-start;
+gap: 120px;
+margin-top: 40px;
+}
+
+.hobi, .anime{
+text-align: center;
+}
+
+.foto{
+width: 220px;
+height: 150px;
+object-fit: cover;
+border-radius: 10px;
+margin-bottom: 20px;
+}
+
+.anime-img{
+width: 140px;
+margin-top: 10px;
+border-radius: 8px;
+}
+
+.anime-img{
+width: 150px;
+height: 200px;
+object-fit: cover;
+border-radius: 8px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
