@@ -63,25 +63,20 @@ margin-top: 40px;
 text-align: center;
 }
 
-.foto{
-width: 220px;
-height: 150px;
-object-fit: cover;
-border-radius: 10px;
-margin-bottom: 20px;
+/* Tambahkan ini di dalam tag <style> kamu */
+.foto, .anime-img {
+    display: none; /* Menyembunyikan gambar */
+    margin: 10px auto;
+    transition: 0.3s;
+}
+/* Kelas untuk menampilkan gambar */
+.show {
+    display: block !important;
+    opacity: 1 !important;
 }
 
-.anime-img{
-width: 140px;
-margin-top: 10px;
-border-radius: 8px;
+/* Tambahkan kursor agar user tahu judul bisa diklik */
+.hobi h2, .anime h2 {
+    cursor: pointer;
+    user-select: none;
 }
-
-.anime-img{
-width: 150px;
-height: 200px;
-object-fit: cover;
-border-radius: 8px;
-box-shadow: 0 5px 15px rgba(0,0,0,0.3);
-}
-
