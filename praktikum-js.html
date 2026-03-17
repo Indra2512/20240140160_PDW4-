@@ -52,35 +52,34 @@
     </div>
 
 <div class="container-hobi">
-
     <div class="hobi">
-        <h2 onclick="toggleImages('foto')" style="cursor:pointer;">Hobi Saya</h2>
+        <h2 onclick="toggleGrup('group-hobi')" style="cursor:pointer;">Hobi Saya</h2>
         
-        <p>Fotografi</p>
-        <img src="IMG_3396.JPG" class="foto">
+        <div id="group-hobi" style="display:none;">
+            <p>Fotografi</p>
+            <img src="IMG_3396.JPG" class="foto-tampil" width="200">
 
-        <p>Videografi</p>
-        <img src="IMG_5093 (1).JPG" class="foto">
+            <p>Videografi</p>
+            <img src="IMG_5093 (1).JPG" class="foto-tampil" width="200">
 
-        <p>Editing</p>
-        <img src="WhatsApp Image 2026-03-12 at 00.37.37.jpeg" class="foto">
+            <p>Editing</p>
+            <img src="WhatsApp Image 2026-03-12 at 00.37.37.jpeg" class="foto-tampil" width="200">
+        </div>
     </div>
 
     <div class="anime">
-        <h2 onclick="toggleImages('anime-img')" style="cursor:pointer;">Anime Favorit</h2>
+        <h2 onclick="toggleGrup('group-anime')" style="cursor:pointer;">Anime Favorit</h2>
 
-        <img src="Komi-san.jpg" class="anime-img">
-        <p>Komi Can't Communicate</p>
+        <div id="group-anime" style="display:none;">
+            <img src="Komi-san.jpg" class="foto-tampil" width="150">
+            <p>Komi Can't Communicate</p>
 
-        <img src="Boku no hero.jpg" class="anime-img">
-        <p>Boku no Hero</p>
+            <img src="Boku no hero.jpg" class="foto-tampil" width="150">
+            <p>Boku no Hero</p>
+        </div>
     </div>
-
 </div>
 
-    
-
-</div>
-
+<script src="Praktikum.js"></script>
 </body>
 </html>

@@ -1,82 +1,72 @@
-body{
-background: linear-gradient(135deg,#74ebd5,#9face6);
-font-family: Arial;
-text-align: center;
+body {
+    background: linear-gradient(135deg, #74ebd5, #9face6);
+    font-family: Arial, sans-serif;
+    text-align: center;
 }
 
-.hobi{
-    color: darkgreen;
+.deskripsi {
+    width: 50%;
+    margin: 30px auto;
+    font-family: 'Poppins', sans-serif;
+    font-size: 20px;
+    line-height: 1.9;
+    text-align: justify;
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
 }
 
-ul{
-    list-style: none;
-    padding: 0;
+/* --- KONTAINER HOBI & ANIME --- */
+.container-hobi {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 120px;
+    margin-top: 40px;
 }
 
-li{
-background: #6c8ea0;
-width: 200px;
-margin: 10px auto;
-padding: 10px;
-border-radius: 10px;
-transition: 0.3s;
-}
-
-li:hover{
-background: #3c6e7a;
-color: white;
-transform: scale(1.1);
-}
-
-.deskripsi{
-width: 50%;
-margin: 30px auto;
-font-family: 'Poppins', sans-serif;
-font-size: 20px;
-line-height: 1.9;
-text-align: justify;
-background: white;
-padding: 30px;
-border-radius: 15px;
-box-shadow: 0 10px 25px rgba(0,0,0,0.2);
-}
-
-.profile-img{
-border-radius: 10%;
-border: 3px solid rgb(25, 201, 154);
-transition: transform 0.4s;
-}
-
-img:hover{
-transform: scale(1.1);
-}
-
-.container-hobi{
-display: flex;
-justify-content: center;
-align-items: flex-start;
-gap: 120px;
-margin-top: 40px;
-}
-
-.hobi, .anime{
-text-align: center;
-}
-
-/* Tambahkan ini di dalam tag <style> kamu */
-.foto, .anime-img {
-    display: none; /* Menyembunyikan gambar */
-    margin: 10px auto;
-    transition: 0.3s;
-}
-/* Kelas untuk menampilkan gambar */
-.show {
-    display: block !important;
-    opacity: 1 !important;
-}
-
-/* Tambahkan kursor agar user tahu judul bisa diklik */
 .hobi h2, .anime h2 {
+    color: #358a93;
     cursor: pointer;
     user-select: none;
+    transition: 0.3s;
+}
+
+.hobi h2:hover, .anime h2:hover {
+    color: darkgreen;
+    transform: scale(1.05);
+}
+
+#group-hobi, #group-anime {
+    display: none; 
+    opacity: 0;
+}
+
+@keyframes meluncur {
+    from { 
+        opacity: 0; 
+        transform: translateY(-20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: translateY(0); 
+    }
+}
+
+.tampil-animasi {
+    display: block !important;
+    animation: meluncur 0.6s ease-out forwards;
+}
+
+#group-hobi img, #group-anime img {
+    display: block; 
+    margin: 20px auto;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s ease;
+}
+
+#group-hobi img:hover, #group-anime img:hover {
+    transform: scale(1.1); 
 }
